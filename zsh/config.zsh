@@ -6,6 +6,7 @@ fi
 
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
+export ZSH_THEME="avit"
 
 fpath=($ZSH/functions $fpath)
 
