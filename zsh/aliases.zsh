@@ -4,9 +4,9 @@ alias_file="~/.dotfiles/zsh/aliases.zsh"
 config_file="~/.dotfiles/zsh/config.zsh"
 
 alias refreshsettings='source '$settings_file
-alias settings='subl '$settings_file
-alias aliases='subl '$alias_file
-alias config='subl '$config_file
+alias settings='e '$settings_file
+alias aliases='e '$alias_file
+alias config='e '$config_file
 
 # Directory navigation
 alias la='ls -a'
@@ -21,7 +21,7 @@ function md(){
 alias c='pygmentize -O style=monokai -f console256 -g'
 
 # Edit hosts file
-alias hosts='subl /private/etc/hosts'
+alias hosts='e /private/etc/hosts'
 
 # Get external IP address
 alias ip='curl ipecho.net/plain; echo'
