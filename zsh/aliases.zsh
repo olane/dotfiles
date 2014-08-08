@@ -28,3 +28,7 @@ alias ip='curl ipecho.net/plain; echo'
 
 # View most used commands
 alias historystats='history|awk '\''{print $2}'\''|awk '\''BEGIN {FS="|"} {print $1}'\''|sort|uniq -c|sort'
+
+# Hidden files
+alias showHiddenFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hideHiddenFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
