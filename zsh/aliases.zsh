@@ -32,3 +32,6 @@ alias historystats='history|awk '\''{print $2}'\''|awk '\''BEGIN {FS="|"} {print
 # Hidden files
 alias showHiddenFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideHiddenFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
+# Stop zsh interfering with rake
+alias rake="noglob rake"
